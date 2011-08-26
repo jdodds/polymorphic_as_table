@@ -1,4 +1,7 @@
-PKG_FILES = FileList[
+require 'rubygems'
+require 'rake'
+
+PKG_FILES = Rake::FileList[
   '[a-zA-Z]*',
   'generators/**/*',
   'lib/**/*',
@@ -7,7 +10,7 @@ PKG_FILES = FileList[
   'test/**/*'
 ]
 
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
   s.name = "polymorphic_as_table"
   s.version = "0.5.0"
   s.author = "Jeremiah Dodds"
