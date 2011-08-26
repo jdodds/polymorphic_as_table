@@ -1,2 +1,3 @@
 test/*db
 test/*log
+polymorphic_as_table*gem
